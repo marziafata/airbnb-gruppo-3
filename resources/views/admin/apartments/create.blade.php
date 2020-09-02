@@ -23,8 +23,12 @@
                         <input type="text" name="title" class="form-control" id="titolo" placeholder="Titolo inserzione" value="{{ old('title') }}">
                     </div>
                     <div class="form-group">
-                        <label for="testo">Descrizione</label>
-                        <textarea type="text" name="description" class="form-control" id="testo" placeholder="Inserisci descrizione dell'appartamento...">{{ old('description') }}</textarea>
+                        <label for="descrizione">Descrizione</label>
+                        <textarea type="text" name="description" class="form-control" id="descrizione" placeholder="Inserisci descrizione dell'appartamento...">{{ old('description') }}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="indirizzo">Indirizzo</label>
+                        <input type="text" name="address" class="form-control" id="indirizzo" placeholder="Indirizzo" value="{{ old('address') }}">
                     </div>
                     <div class="form-group">
                         <label for="numero-stanze">Numero di stanze:</label>

@@ -18,6 +18,7 @@ class ApartmentsTableSeeder extends Seeder
             $nuovo_appartamento = new Apartment();
             $nuovo_appartamento->title = $faker->sentence(6); //il titolo non può essere un array
             $nuovo_appartamento->description = $faker->paragraph(4);
+            $nuovo_appartamento->address = $faker->city;
             $nuovo_appartamento->room = $faker->numberBetween(1, 10);
             $nuovo_appartamento->bath = $faker->numberBetween(1, 10);
             $nuovo_appartamento->square_meters = $faker->numberBetween(30, 300);

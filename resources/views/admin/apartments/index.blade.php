@@ -26,6 +26,7 @@
                     <div class="testo">
                         <h3>{{$apartment->title}}</h3>
                         <p>{{$apartment->description}}</p>
+                        <p>{{$apartment->address}}</p>
                         @forelse ($apartment->services as $service)
                              {{ $service->description }}{{ $loop->last ? '' : ', '}}
                         @empty
