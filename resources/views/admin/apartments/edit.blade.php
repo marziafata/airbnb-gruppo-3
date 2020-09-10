@@ -34,8 +34,8 @@
                     <input type="search" class="form-control" id="form-address" name="address" value="{{old('address', $apartment->address)}}" placeholder="Inserisci il tuo indirizzo">
                 </div>
                 <div class="form-group">
-                    <input type="hidden" name="latitude" class="form-control" id="latitude" value="{{old('latitude')}}">
-                    <input type="hidden" name="longitude" class="form-control" id="longitude" value="{{old('longitude')}}">
+                    <input type="hidden" name="latitude" class="form-control" id="latitude" value="{{old('latitude', $apartment->latitude)}}">
+                    <input type="hidden" name="longitude" class="form-control" id="longitude" value="{{old('longitude', $apartment->longitude)}}">
                 </div>
 
                 <div class="form-group">

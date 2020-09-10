@@ -21,8 +21,8 @@ class Apartment extends Model
             ];
         })->toArray();
         $array['_geoloc'] = [
-            'lat' => $this->latitude,
-            'lng' => $this->longitude
+            'latitude' => $this->latitude,
+            'longitude' => $this->longitude
         ];
         $array['user_name'] = $this->user->name;
         return $array;

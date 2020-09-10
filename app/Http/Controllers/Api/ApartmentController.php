@@ -10,11 +10,22 @@ use App\Apartment;
 class ApartmentController extends Controller
 {
 
-    public function all(Request $request){
+    public function all(){
 
-        $apartments = Apartment::all()->where('status', '1');
+        $apartment = Apartment::search()
+            ->with([
+                'aroundLatLng' => [floatval('87'), floatval('60')],
+                'aroundRadius' => 1000 * 20,
+                'filters' => 'room >= ' . intval(2) . ' ' .
+                    'AND bath >= ' . intval(1) . ' ' .
+                    'AND is_active = 1',
+                'hitsPerPage' => 1000
+            ])
+            ->get();
 
-        return response()->json($apartments);
+        // $apartments = Apartment::all()->where('status', '1');
+
+        return response()->json($apartment);
     }
 
     public function sponsored(){
