@@ -11,8 +11,15 @@ class Apartment extends Model
 
     public function toSearchableArray()
     {
+        
         $array = $this->toArray();
         $array = $this->transform($array);
+        $array['services'] = $this->services->map(function ($data) {
+            return [
+                'id' => $data['id'],
+                'description' => $data['description']
+            ];
+        })->toArray();
         $array['_geoloc'] = [
             'lat' => $this->latitude,
             'lng' => $this->longitude
