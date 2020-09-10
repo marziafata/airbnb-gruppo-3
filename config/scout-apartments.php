@@ -26,6 +26,7 @@ return [
         'latitude',
         'longitude',
         'status',
+        'services',
     ],
 
     /*
@@ -42,7 +43,7 @@ return [
     |
     */
 
-    'customRanking' => ['desc(created_at)', 'desc(updated_at)'],
+    'customRanking' => ['desc(id)'],
 
     /*
     |--------------------------------------------------------------------------

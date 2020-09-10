@@ -11,18 +11,14 @@ class ApartmentController extends Controller
 {
 
     public function all(){
+        
+        $apartment = Apartment::search()->with([
+            'filters' => 'room = 2',
+            'aroundLatLng' => '‎45.4773, 9.1815',
+            'aroundRadius' => 10000000,
+            'hitsPerPage' => 100])->get();
 
-        $apartment = Apartment::search()
-            ->with([
-                'aroundLatLng' => [floatval('87'), floatval('60')],
-                'aroundRadius' => 1000 * 20,
-                'filters' => 'room >= ' . intval(2) . ' ' .
-                    'AND bath >= ' . intval(1) . ' ' .
-                    'AND is_active = 1',
-                'hitsPerPage' => 1000
-            ])
-            ->get();
-
+            
         // $apartments = Apartment::all()->where('status', '1');
 
         return response()->json($apartment);
