@@ -26,6 +26,13 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/show/{apartment}', 'ApartmentController@show')->name('show');
 Route::post('/show/{apartment}', 'ApartmentController@sendmessage')->name('storemessage');
 Route::post('/search', 'HomeController@search')->name('search');
+// Route::get('/search', function() {
+//     $query = ''; // <-- Change the query for testing.
+
+//     $apartment = App\Apartment::search($query)->get();
+
+//     return $apartment;
+// });
 
 //Rotta che mappa la home page dell'amministratore
 Route::prefix('admin')
