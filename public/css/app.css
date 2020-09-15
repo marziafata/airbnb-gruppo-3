@@ -11494,6 +11494,7 @@ h6 {
 #descrizione-appartamento p {
   font-size: 17px;
   line-height: 27px;
+  white-space: pre-wrap;
 }
 
 nobr.tag-servizi {
@@ -11515,6 +11516,25 @@ nobr.tag-servizi {
   .dettagli-camera p {
     font-size: 15px;
   }
+}
+
+.messaggio {
+  background-color: white;
+  color: #3c4858;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 7px;
+}
+
+.messaggio .messaggio-left {
+  background-color: rgba(223, 227, 237, 0.4);
+}
+
+.messaggio i {
+  color: #f9423a;
+  margin-right: 5px;
 }
 
 .img-appartamento {
@@ -11660,25 +11680,6 @@ input[type=submit].myinput:active {
     border-top-right-radius: 7px;
     border-bottom-left-radius: 0;
   }
-}
-
-.messaggio {
-  background-color: white;
-  color: #3c4858;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 3px 1px 4px 0px rgba(0, 0, 0, 0.1);
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 7px;
-}
-
-.messaggio .messaggio-left {
-  background-color: rgba(223, 227, 237, 0.4);
-}
-
-.messaggio i {
-  color: #f9423a;
-  margin-right: 5px;
 }
 
 #map {

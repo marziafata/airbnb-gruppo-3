@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-2 mt-4">
-                <div class="dettagli-servizi d-flex align-items-center flex-lg-column w-100 p-2 mt-2 mt-lg-0">
+                <div class="dettagli-servizi d-flex align-items-center flex-lg-column align-items-lg-start w-100 p-2 mt-2 mt-lg-0">
                     <h2 class="text-center h5 mb-4 mt-5 d-none d-md-block">Servizi</h2>
                     <div class="tags">
                         <ul class="list-unstyled">
