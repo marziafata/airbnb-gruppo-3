@@ -11486,15 +11486,14 @@ h6 {
   font-size: 18px;
 }
 
-.dettagli-servizi {
-  border-left: 3px solid #f9423a;
-  height: 96%;
-}
-
 #descrizione-appartamento p {
   font-size: 17px;
   line-height: 27px;
   white-space: pre-wrap;
+}
+
+.dettagli-servizi {
+  height: 43%;
 }
 
 nobr.tag-servizi {
@@ -11504,8 +11503,8 @@ nobr.tag-servizi {
   color: #3c4858;
   font-weight: 500;
   margin-right: 5px;
-  font-size: 13px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 32px;
 }
 
 @media (max-width: 767.98px) {

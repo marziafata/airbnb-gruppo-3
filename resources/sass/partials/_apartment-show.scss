@@ -33,15 +33,14 @@ h1, h2, h6 {
     }
 }
 
-.dettagli-servizi {
-    border-left: 3px solid $colore_primario;
-    height: 96%;
-}
-
 #descrizione-appartamento p {
     font-size: 17px;
     line-height: 27px;
     white-space: pre-wrap;
+}
+
+.dettagli-servizi {
+    height: 43%;
 }
 
 nobr.tag-servizi {
@@ -51,8 +50,8 @@ nobr.tag-servizi {
     color: $font_color_dark;
     font-weight: 500;
     margin-right: 5px;
-    font-size: 13px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 32px;
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -66,3 +65,15 @@ nobr.tag-servizi {
         }
     }
 }
+
+// Medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) {
+//     .dettagli-servizi {
+//         border-top: 1px solid rgba(0, 0, 0, 0.1);
+//         border-left: none;
+//     }
+
+// }
+
+
+

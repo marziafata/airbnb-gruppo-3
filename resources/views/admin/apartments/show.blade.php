@@ -50,15 +50,15 @@
     <div class="container px-0 mt-3">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-8">
-                <div class="pt-4" id="descrizione-appartamento">
+                <div class="pt-4 mt-4" id="descrizione-appartamento">
                     <p class="text-justify">{{$apartment->description}}</p>
                 </div>
             </div>
             <div class="col-12 col-lg-2 mt-4">
-                <div class="dettagli-servizi d-flex align-items-center flex-lg-column align-items-lg-start w-100 p-2 mt-2 mt-lg-0">
-                    <h2 class="text-center h5 mb-4 mt-5 d-none d-md-block">Servizi</h2>
+                <div class="dettagli-servizi d-flex align-items-center align-items-lg-start flex-lg-column pl-4 h-50 w-100 p-2 mt-2 mt-lg-0">
+                    <h2 class="h4 mb-4 mt-3 d-none d-lg-block">Servizi</h2>
                     <div class="tags">
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled d-flex flex-wrap flex-md-nowrap flex-lg-column mb-0 w-100">
                             @forelse ($apartment->services as $service)
                             <li class="mt-3">
                                 <nobr class="tag-servizi mt-1">{{ $service->description }}</nobr>
@@ -69,55 +69,19 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="col-12 col-lg-2 caratteristiche text-left mt-3">
-                    <div class="servizi">
-                        <h6 class="text-center mt-3">Servizi Aggiuntivi</h6>
-                        <ul class="list-group servizi">
-                            @forelse($apartment->services as $service)
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        <div class="w-25 text-center">
-                                            <i class="fas fa-check-circle"></i><span>
-                                        </div>
-                                        <div class="w-50">
-
-                                        </div>
-                                        <div class="w-25 text-center">
-                                            <span class="badge ">{{$service->description}}</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            @empty
-                                    <li class="list-group-item d-flex text-center align-items-center">
-                                        <div class="w-25">
-                                            <i class="far fa-check-circle"></i><span>
-                                        </div>
-                                        <div class="w-50">
-
-                                        </div>
-                                        <div class="w-25">
-                                            <span class="badge ">Nessuno</span>
-                                        </div>
-                                    </li>
-                            @endforelse
-                        </ul>
+                <div class="statistiche d-flex align-items-center flex-lg-column pl-4 w-100 p-2 mt-2 mt-lg-0">
+                    <h2 class="h4 mb-4 mt-3 d-none d-lg-block">Statistiche</h2>
+                    <div class="">
+                        <div class="mb-3">
+                            <img class="img-fluid rounded border border-color-grey" src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2018/12/24160114/LOSDOS1-1024x767.png" alt="grafici">
+                        </div>
+                        <a class="bottone" href="{{Route('admin.statistics', ['apartment' => $apartment->id])}}">Le tue statistiche</a>
                     </div>
                 </div>
-                <div class="statistiche mt-3 text-center">
-                    <img class="img-fluid rounded border border-color-grey" src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2018/12/24160114/LOSDOS1-1024x767.png" alt="grafici">
-                    <button class="btn btn-success color-white mt-2 w-100" type="button" name="button">
-                        <a href="{{Route('admin.statistics', ['apartment' => $apartment->id])}}">Le tue statistiche</a>
-                    </button>
-                </div>
             </div>
         </div>
     </div>
+
         {{-- promozioni --}}
     <div class="container promozioni py-3">
         <div class="row">
