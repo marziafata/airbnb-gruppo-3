@@ -11845,6 +11845,7 @@ a[aria-expanded=true] {
   padding: 10px;
   border-radius: 7px;
   height: 40px;
+  font-size: 14px;
 }
 
 .card {
@@ -11861,6 +11862,10 @@ a[aria-expanded=true] {
 .card-img-top {
   border-top-left-radius: 7px !important;
   border-top-right-radius: 7px !important;
+  height: 230px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sponsorizzato {
@@ -12016,6 +12021,21 @@ input[type=radio].search {
 
 .form-check-input.search {
   position: relative;
+}
+
+.gold-sponsor {
+  background-color: #FEECEB;
+}
+
+.btn-ricerca {
+  height: 40px;
+  width: 75px;
+  font-size: 14px;
+  align-self: end;
+  color: #feeceb;
+  background-color: #f9423a;
+  border: 1px solid #f9423a;
+  border-radius: 7px;
 }
 
 #map {

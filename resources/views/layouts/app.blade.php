@@ -42,7 +42,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <div class="logo-wrap d-flex align-items-center h-100">
-                        <img class="img-fluid" src="{{asset('/storage/logo/Boolbnblogo.png')}}" alt="logo">
+                        <img class="img-fluid" src="{{asset('/storage/image/logo.png')}}" alt="logo">
                     </div>
                     {{-- {{ config('app.name', 'Laravel') }} --}}
                 </a>

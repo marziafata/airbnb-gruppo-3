@@ -37279,13 +37279,15 @@ $(document).ready(function () {
     $('.hamburger-menu').show();
     $('.close').show();
     $('#panino').hide();
-    $('#main-cards').hide();
+    $('main').hide();
+    $('footer').hide();
   });
   $('#close').click(function () {
     $('.hamburger-menu').hide();
     $('.close').hide();
     $('#panino').show();
-    $('#main-cards').show();
+    $('main').show();
+    $('footer').show();
   });
   $('#button-message').click(function () {
     $('#alert-message').alert('close');
@@ -37357,13 +37359,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-__webpack_require__(/*! /Applications/MAMP/htdocs/boolean/progetto-finale/airbnb-gruppo-3/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/boolean/progetto-finale/airbnb-gruppo-3/resources/sass/app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! C:\MAMP\htdocs\progettoairbnb\airbnb-gruppo-3\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\MAMP\htdocs\progettoairbnb\airbnb-gruppo-3\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> braintree
+__webpack_require__(/*! /Applications/MAMP/htdocs/esercizi_boolean/airbnb-gruppo-3/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/esercizi_boolean/airbnb-gruppo-3/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
